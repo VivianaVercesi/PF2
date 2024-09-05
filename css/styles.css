@@ -1,0 +1,88 @@
+               
+body{
+    font-family: 'Kaisei HarunoUmi', sans-serif;
+                                                                                             
+    background-color: rgb(195, 184, 185);
+    color: rgb(59, 33, 34);
+    font-size: 1.1em;
+    margin: 5em;
+    
+}
+
+body h1{
+    font-family: 'Alice', sans-serif;
+    font-weight: 300;
+    color: rgb(116, 65, 67);
+    background-color: rgb(161, 143, 144) ;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+body table{
+    width: 90%;
+    border-collapse: collapse; /* Elimina los espacios entre los bordes de las celdas */
+    margin: 2em;
+    border: 2px solid rgb(116, 65, 67); /* Borde para toda la tabla */
+}
+
+body table td{
+    padding-inline-start: 1.5em;
+    padding-inline-end: 1.5em;
+    border: 1px solid rgb(116, 65, 67); /* Borde para cada celda (th y td) */
+}
+
+body table th{
+    padding-inline-start: 1.5em;
+    padding-inline-end: 1.5em;
+    background-color: rgb(170, 133, 133);
+}
+.flex-container {
+    display: flex; /* Hace que los elementos hijos se alineen en una fila */
+    align-items: center; /* Alinea la imagen y el texto verticalmente en el centro */
+    
+}
+.flex-container p{
+    padding: 0.3em;
+}
+
+/* Estilo para la imagen */
+#foto {
+    margin-right: 0.1em; /* Espacio entre la imagen y el texto */
+    width: 9em; /* Ajusta el ancho de la imagen */
+    height: auto;
+    border: 0.4em solid rgb(170, 133, 133);
+    border-radius: 15%;
+}
+
+form {
+    width: 100%; /* Ancho del formulario */
+    max-width: 30em; /* Ancho máximo para controlar el tamaño */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+label, input, button {
+    display: block; /* Hacer que cada elemento ocupe una línea completa */
+    width: 100%; /* Hacer que cada elemento ocupe todo el ancho disponible */
+    margin-bottom: 10px; /* Añadir espacio entre los elementos */
+}
+
+input, button {
+    padding: 8px; /* Añadir padding a los inputs y al botón */
+    box-sizing: border-box; /* Incluir el padding dentro del width */
+}
+
+button {
+    background-color: rgb(161, 143, 144); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quitar el borde del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Mostrar cursor de mano al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: rgb(116, 65, 67); /* Color de fondo del botón al pasar el ratón */
+}
+
+
