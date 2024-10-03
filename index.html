@@ -3,83 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Mi Portafolio</title>
-   
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Fontawesome -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- letra para el body -->
     <link href="https://fonts.cdnfonts.com/css/kaisei-harunoumi" rel="stylesheet">
     
-    <!-- letra para el título -->          
+    <!-- letra para el heading -->          
     <link href="https://fonts.cdnfonts.com/css/alice-2" rel="stylesheet">
-                                
-    <link rel="stylesheet" href="/css/styles.css">
-    
+   
 </head>
 <body>
+     <!-- Home section-->
+     <nav class="navbar navbar-expand sticky-top">
+        <div class="container-fluid">
+      
+          <div  id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-0 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#about">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#projects">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact">Contacto</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+     
+    </nav> 
+    
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h1 class="hero_title">Hola!</h1>
+                    <h2 class="hero_title">Soy Viviana Vercesi</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+   <!-- About section--> 
+  
+    <section id="about">
+        <div class="flex-container flex-column">
+            
+            <p >Soy una persona responsable y organizada. Me destaco por mi capacidad de adaptación a los cambios y siempre estoy dispuesta a aprender y trabajar en equipo. Durante varios años, me dediqué a estudiar y trabajar como Actuario. Si bien cursé todas las materias de la carrera, no llegué a recibir el título formal, pero adquirí un profundo conocimiento en áreas como la matemática aplicada y la estadística que me permitió desarrollar habilidades analíticas indispensables para resolver problemas complejos y tomar decisiones informadas.</p>
+            <p >Sin embargo, con el tiempo, descubrí una nueva pasión: el desarrollo de software. Inspirada por la creciente importancia de la tecnología en todos los aspectos de la vida y  un deseo innato de seguir aprendiendo, comencé a estudiar programación. Este nuevo camino me permitió aplicar mis habilidades analíticas y de resolución de problemas en un contexto diferente, además de adquirir nuevos conocimientos.</p>
+            <p >Ahora me encuentro dando mis primeros pasos en este emocionante mundo, aprendiendo diferentes lenguajes de programación, entusiasmada por las oportunidades que este cambio de carrera puede ofrecerme y comprometida a continuar mi formación.</p>
+        </div>
+    </section>                 
+    
+     <!-- Skills section--> 
 
-    <h1>Viviana Vercesi</h1>
-    <div class="flex-container">
-        <img src="/images/miFoto.jpg" alt="Mi foto de perfil" id="foto">
-        <p></p>
-        <p>Soy una persona responsable y organizada. Me destaco por mi capacidad de adaptación a los cambios y siempre estoy dispuesta a aprender y trabajar en equipo. Durante varios años, me dediqué a estudiar y trabajar como Actuario. Si bien cursé todas las materias de la carrera, no llegué a recibir el título formal, pero adquirí un profundo conocimiento en áreas como la matemática aplicada y la estadística que me permitió desarrollar habilidades analíticas indispensables para resolver problemas complejos y tomar decisiones informadas.</p>
-        <p>Sin embargo, con el tiempo, descubrí una nueva pasión: el desarrollo de software. Inspirada por la creciente importancia de la tecnología en todos los aspectos de la vida y  un deseo innato de seguir aprendiendo, comencé a estudiar programación. Este nuevo camino me permitió aplicar mis habilidades analíticas y de resolución de problemas en un contexto diferente, además de adquirir nuevos conocimientos.</p>
-        <p>Ahora me encuentro dando mis primeros pasos en este emocionante mundo, aprendiendo diferentes lenguajes de programación, entusiasmada por las oportunidades que este cambio de carrera puede ofrecerme y comprometida a continuar mi formación.</p>
+     
+    <section class="" id="skills">
+        <table class="tech-table">
+            <thead>
+              <tr>
+                <th>Tecnología</th>
+                <th>Nivel de conocimiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Html</td>
+                <td>Conozco</td>
+              </tr>
+              <tr>
+                <td>Css</td>
+                <td>Conozco</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Quiero aprender</td>
+              </tr>
+              <tr>
+                <td>C#</td>
+                <td>Conozco</td>
+              </tr>
+              <tr>
+                <td>SQL</td>
+                <td>Conozco</td>
+              </tr>
+              <tr>
+                <td>Kotlin</td>
+                <td>Conozco</td>
+              </tr>  
+    
+              </tr>
+                <td>Python</td>
+                <td>Quiero aprender</td>
+              </tr>
+    
+              <tr>
+                <td>Node.js</td>
+                <td>Quiero aprender</td>
+              </tr>
+              <tr>
+                <td>NoSQL</td>
+                <td>Quiero aprender</td>
+              </tr>
+              
+            </tbody>
+          </table>
+     
+    </section> 
+    
+    <!-- Projects section-->
+
+    <section id="projects">
+    <div class="card-group">
+        <div class="card" id="carilo-servicios">
+            <img src="./assets/carilo.png" class="card-img-top " alt="Imagen de la página de inicio del sitio web">
+            <div class="card-body">
+                <h4 class="card-title">Cariló Servicios</h5>
+                <p class="card-text">Sitio web de empresa familiar. Trabajo integrador del curso de PHP Full Stack</p>
+                <a href="https://vivianaver.github.io/Integrador/" class="btn btn-outline-success mt-4" tabindex="-1" role="button" aria-disabled="true">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="card" id="club-deportivo-app">
+            <img src="./assets/clubDeportivo.png" class="card-img-top" alt="alquiler" >
+            <div class="card-body">
+                <h4 class="card-title" >Club club-deportivo-mobile</h4>
+                <p class="card-text">Sistema para la administración de un club deportivo desarrollado en C#. Trabajo intergrador de la materia Desarrollo de Sistemas Orientado a Objetos</p>
+                <a href="https://github.com/2do-cuatri/DSOO-ProyectoIntegrador" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="card" id="clínica">
+            <img src="./assets/clinica.png" class="card-img-top" alt="mantenimiento">
+            <div class="card-body">
+                <h4 class="card-title">Clínica SePrice</h4>
+                <p class="card-text">Sistema para la gestión de una clínica de salud desarrollado en C#. Práctica formativa de la materia Desarrollo de Sistemas de Información orientados a la gestión y apoyo a las decisiones.</p>
+                <a href="https://github.com/2do-cuatri/PP2-Clinica-SePrice" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Ver proyecto</a>
+            </div>
+        </div>
+        <div class="card" id="club-deportivo-mobile">
+            <img src="./assets/appClub.png" class="card-img-top" alt="obras">
+            <div class="card-body">
+                <h4 class="card-title">Club Deportivo - App</h4>
+                <p class="card-text">Aplicación para la administración de un club deportivo desarrollada en kotlin. Práctica formativa de la materia Desarrollo de Aplicaciones para Dispositivos Móviles. </p>
+                <a href="https://github.com/2do-cuatri/TP-DAM" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Ver proyecto</a>
+            </div>
+        </div>
     </div>
-    
-    <a href=""></a>
-    
-    <table>
-        <tr>
-            <th>Tecnologías conocidas</th>
-            <th>Tecnologías que quiero aprender</th>
-            <th>Hobbies</th>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>SQL</li>
-                    <li>C#</li>
-                    <li>Kotlin</li>
-                </ul>
-            </td>
-        
-            <td>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                    <li>Python</li>
-                    <li>NoSQL</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Leer</li>
-                    <li>Enseñar matemáticas</li>
-                    <li>Armar rompecabezas</li>
-                    <li>Aprender a programar</li>
-                    <li>Pilates</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
 
-    <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+    </section>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
+    <!-- Contact section-->
+    <section id="contact">
+        <div class="container mt-5 contactContent">
+            <h1 class="text-center">Contacto</h1>
+            <div class="row mt-5">
+               
+                   <form>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                             <input class="form-control"type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button class="submit">Enviar</button>     
+                    </form>
+                
+            </div>
+        </div>
+    </section>
+   
+     
+                            
+<!-- footer section-->
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+    <footer id="footer">
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono">
+        <div class="container-fluid">
 
-        <button type="submit">Enviar</button>
-    </form>
+        <!-- social media icons -->
 
+            <div class="social-icons mt-4">
+
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/31149d48b0.js/31149d48b0.js" crossorigin="anonymous"></script>                
 </body>
 </html>

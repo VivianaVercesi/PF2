@@ -1,88 +1,376 @@
-               
 body{
     font-family: 'Kaisei HarunoUmi', sans-serif;
-                                                                                             
-    background-color: rgb(195, 184, 185);
+    background-color: antiquewhite;
     color: rgb(59, 33, 34);
     font-size: 1.1em;
-    margin: 5em;
-    
+    margin: 5em; 
 }
 
-body h1{
+.navbar{
     font-family: 'Alice', sans-serif;
-    font-weight: 300;
+    font-weight: 50;
     color: rgb(116, 65, 67);
     background-color: rgb(161, 143, 144) ;
-    font-size: 3em;
+    font-size: 2em;
+    text-align: right;
+    padding: 0.5em 0em 0.5em 0.5em;    
+}
+
+.navbar :hover{
+    font-size: 2.5rem;
+    font-weight: bold;
+    }
+    
+/* sección home */
+
+.bgimage {     
+    height: 100vh;
+    background: url("/assets/fondo.jpeg");
+    background-size: cover;
+    position: bottom;
+    opacity: 90%;
+}
+
+.hero_title {
+    font-family: 'Alice', sans-serif;
+    font-size: 4.8rem;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+.hero-text {
     text-align: center;
-    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(116, 65, 67);
+}                
+
+#about, #skills, #projects{
+    padding: 3em;
+}
+ /* sección about*/
+
+#about {
+    font-family: 'Alice', sans-serif;
+    max-width: 100ch; /* Limita el ancho a 100 caracteres */
+    margin: 1.5em auto; /* Centra el párrafo */
+    line-height: 1.7; /* Mejora el espaciado entre líneas */
+    font-size: 2em; 
+    color: rgb(124, 124, 124);
+    padding: 3em 3.5em 0em;
     
 }
 
-body table{
-    width: 90%;
-    border-collapse: collapse; /* Elimina los espacios entre los bordes de las celdas */
-    margin: 2em;
-    border: 2px solid rgb(116, 65, 67); /* Borde para toda la tabla */
-}
+/* sección skills*/
 
-body table td{
-    padding-inline-start: 1.5em;
-    padding-inline-end: 1.5em;
-    border: 1px solid rgb(116, 65, 67); /* Borde para cada celda (th y td) */
-}
-
-body table th{
-    padding-inline-start: 1.5em;
-    padding-inline-end: 1.5em;
-    background-color: rgb(170, 133, 133);
-}
 .flex-container {
-    display: flex; /* Hace que los elementos hijos se alineen en una fila */
-    align-items: center; /* Alinea la imagen y el texto verticalmente en el centro */
-    
-}
-.flex-container p{
-    padding: 0.3em;
+    display: flex; 
 }
 
-/* Estilo para la imagen */
-#foto {
-    margin-right: 0.1em; /* Espacio entre la imagen y el texto */
-    width: 9em; /* Ajusta el ancho de la imagen */
-    height: auto;
-    border: 0.4em solid rgb(170, 133, 133);
-    border-radius: 15%;
+.tech-table {
+    width: 60%; /* Define un ancho relativo */
+    border: 0.5em solid rgb(161, 143, 144);
+    border-radius: 0.9em;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2em auto; /* Margen superior/inferior y centrado automático */
+    font-size: 1.5em; /* Texto a escala relativa */
+    table-layout: fixed;     
+    align-content: center;
+    color: rgb(59, 33, 34);
+  }
+  
+  .tech-table th, .tech-table td {
+    padding: 0.75em; 
+    border: 0.063em solid rgb(203, 200, 200); 
+    text-align: center; 
+  }
+  
+  .tech-table th {
+    background-color: rgb(165, 152, 153);
+    table-layout: fixed;
+    font-weight: bold;
+  }
+  
+  .tech-table tr:nth-child(even) {
+    background-color: rgb(205, 191, 192); /* Color de fondo para filas pares */
+  }
+  
+  .tech-table tr:nth-child(odd) {
+    background-color: rgb(246, 244, 240); /* Color de fondo para filas impares */
+  }
+  
+  .tech-table tr:hover {
+    background-color: rgb(189, 184, 175); /* Color al pasar el mouse por la fila */
+    font-weight: bold;  
 }
+
+
+/* sección proyectos*/
+
+.card-group {
+    display: flex;
+    gap: 1.25em; /* Espaciado entre tarjetas */
+    justify-content: space-around;
+    padding: 1.5em;
+    background-color: antiquewhite;
+  }
+  
+  .card {
+    border: 0.07 solid rgb(204, 204, 204); 
+    border-radius: 0.7em; 
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    margin: 1.25em 0; /* Margen entre las filas de tarjetas */
+  }
+  
+  .card:hover {
+    transform: translateY(-0.7em); /* Animación de elevación al hacer hover */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+  }
+  
+  .card-body {
+    padding: 1em;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+  }
+  
+  .card-img-top {
+    border-bottom: 0.07em solid rgb(221, 221, 221); /* Separación entre imagen y contenido */
+    border-radius: 0.7em 0.7em 0 0; /* Redondeo en parte superior de la imagen */
+  }
+  
+  .btn {
+    border-radius: 0.3em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(40, 167, 69);
+    color: white;
+  }
+
+/* sección contacto*/
 
 form {
-    width: 100%; /* Ancho del formulario */
-    max-width: 30em; /* Ancho máximo para controlar el tamaño */
-    margin: 0 auto; /* Centrar el formulario */
+    width:auto; 
+    max-width: auto;    
+    margin: 0 auto; 
+    font-size: 2em;
+    
 }
 
-label, input, button {
-    display: block; /* Hacer que cada elemento ocupe una línea completa */
-    width: 100%; /* Hacer que cada elemento ocupe todo el ancho disponible */
-    margin-bottom: 10px; /* Añadir espacio entre los elementos */
+#contact h1 {
+    color: rgb(116, 65, 67);
+    background-color: rgb(243, 237, 225);
+    border-radius: 0.3em;
 }
 
 input, button {
-    padding: 8px; /* Añadir padding a los inputs y al botón */
-    box-sizing: border-box; /* Incluir el padding dentro del width */
+    display: block; 
+    width: 100%; 
+    margin-bottom: 3em;
+    box-sizing: border-box; 
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.5em; 
 }
 
 button {
-    background-color: rgb(161, 143, 144); /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Quitar el borde del botón */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Mostrar cursor de mano al pasar sobre el botón */
+    background-color: rgb(161, 143, 144); 
+    color: rgb(85, 85, 85); 
+    border: none; 
+    cursor: pointer; /* cambia el cursor a mano */
 }
 
 button:hover {
-    background-color: rgb(116, 65, 67); /* Color de fondo del botón al pasar el ratón */
+    color: white;
+    background-color: rgb(116, 65, 67); 
+    border-radius: 0.3em;
+    font-weight: bold;
 }
+                            
+/* footer */
+
+.social-icons {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-linkedin:hover {
+    color: whitesmoke;
+}
+
+.fa-facebook:active, .fa-instagram:active, .fa-linkedin:active {
+    color: rgb(152, 120, 120);
+}
+
+.fab {
+    color: rgb(0, 0, 0);
+}
+
+#footer {
+    background-color: rgb(122, 118, 118);
+    text-align: center;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+/*responsive*/
+
+@media (max-width: 1080px) {
+  .navbar{
+    font-size: 1.5em ;
+  }
+  .navbar:hover{
+    font-size: 2em;
+  }
+  .hero_title {
+      font-size: 4em;
+  }
+  #about{
+    font-size: 1.6em;
+  }
+  .tech-table {
+  font-size: 1.2;
+  }
+  .card-title {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 0.83rem;
+  }
+  form{
+    font-size: 1.6em;
+  }
+  input::placeholder, textarea::placeholder {
+    font-size: 1.25em; 
+}
+  .card-group {
+      flex-direction: column; /* Cambiar a columnas si es necesario */
+  }
+}
+@media (max-width: 768px) {
+   
+  .navbar{
+    font-size: 1.12em ;
+  }
+  .navbar:hover{
+    font-size: 1.25em;
+  }
+  .hero_title {
+      font-size: 3em;
+  }
+  #about{
+    font-size: 1.2em;
+  }
+  .tech-table {
+  font-size: 1em;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+  form{
+    font-size: 1.1em;
+  }
+  input::placeholder, textarea::placeholder {
+    font-size: 1em; 
+}
+  .card-group {
+      flex-direction: column; /* Cambia a columnas si es necesario */
+      display: block; /* Cambia las tarjetas a un formato apilado */
+  }  
+}
+@media (max-width: 480px) {
+  .navbar{
+    font-size: 1em ;
+  }
+  .navbar:hover{
+    font-size: 1.1em;
+  }
+  .hero_title {
+      font-size: 2.8em;
+  }
+  #about{
+    font-size: 1.2em;
+  }
+  .tech-table {
+  font-size: 0.85em;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  form{
+    font-size: 1em;
+  }
+  input::placeholder, textarea::placeholder {
+    font-size: 1em; 
+ }
+  .card-group {
+    flex-direction: column; /* Cambiar a columnas si es necesario */
+      display: block; /* Cambia las tarjetas a un formato apilado */
+  }  
+
+}
+@media (max-width: 375px) {
+  .navbar{
+    font-size: 0.9em ;
+  }
+  .navbar:hover{
+    font-size: 1.1em;
+  }
+  .hero_title {
+      font-size: 2.2em;
+  }
+  #about{
+    font-size: 1em;
+  }
+  .tech-table {
+  font-size: 0.85em;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  form{
+    font-size: 1em;
+  }
+  input::placeholder, textarea::placeholder {
+    font-size: 1em; 
+ }
+  .card-group {
+    flex-direction: column; /* Cambiar a columnas si es necesario */
+      display: block; /* Cambia las tarjetas a un formato apilado */
+  }  
+
+}                       
+
+
+                       
 
 
