@@ -16,16 +16,16 @@ body{
     padding: 0.5em 0em 0.5em 0.5em;    
 }
 
-.navbar :hover{
-    font-size: 2.5rem;
-    font-weight: bold;
+.navbar .nav-item :hover{
+    font-weight:bolder;
+    color: whitesmoke;
     }
     
 /* sección home */
 
 .bgimage {     
     height: 100vh;
-    background: url("/assets/fondo.jpeg");
+    background: url(../assets/fondo.jpeg);
     background-size: cover;
     position: bottom;
     opacity: 90%;
@@ -71,7 +71,7 @@ body{
 }
 
 .tech-table {
-    width: 60%; /* Define un ancho relativo */
+    width: 85%; /* Define un ancho relativo */
     border: 0.5em solid rgb(161, 143, 144);
     border-radius: 0.9em;
     border-collapse: separate;
@@ -229,18 +229,13 @@ button:hover {
     text-align: center;
 }
 
-#contact {
-    padding-bottom: 4rem;
-}
+
 
 /*responsive*/
 
 @media (max-width: 1080px) {
   .navbar{
     font-size: 1.5em ;
-  }
-  .navbar:hover{
-    font-size: 2em;
   }
   .hero_title {
       font-size: 4em;
@@ -272,9 +267,6 @@ button:hover {
   .navbar{
     font-size: 1.12em ;
   }
-  .navbar:hover{
-    font-size: 1.25em;
-  }
   .hero_title {
       font-size: 3em;
   }
@@ -305,9 +297,6 @@ button:hover {
   .navbar{
     font-size: 1em ;
   }
-  .navbar:hover{
-    font-size: 1.1em;
-  }
   .hero_title {
       font-size: 2.8em;
   }
@@ -337,13 +326,10 @@ button:hover {
 }
 @media (max-width: 375px) {
   .navbar{
-    font-size: 0.9em ;
-  }
-  .navbar:hover{
-    font-size: 1.1em;
+    font-size: 0.7em ;
   }
   .hero_title {
-      font-size: 2.2em;
+      font-size: 2em;
   }
   #about{
     font-size: 1em;
