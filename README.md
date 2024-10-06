@@ -23,5 +23,5 @@ El proyecto está construido con las siguientes tecnologías:
 El proyecto también hace uso de Google Fonts para la tipografía personalizada.
 
 ## Instalación
-Podes clonar el repositorio https://github.com/VivianaVercesi/PF2 y abrirlo desde un editor de código o abrirlo directamente desde https://vivianavercesi.github.io/FrontEnd/
+Podes clonar el repositorio https://github.com/VivianaVercesi/PF2 y abrirlo desde un editor de código o abrirlo directamente desde https://vivianavercesi.github.io/PF2/
 
